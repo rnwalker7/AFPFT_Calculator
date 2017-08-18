@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="32dp"
+        android:layout_alignParentTop="true"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/label_age" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/label_gender" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/age_picker"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent"
+                android:entries="@array/age_array"/>
+
+            <Spinner
+                android:id="@+id/gender_picker"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent"
+                android:entries="@array/gender_array"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_select_tester"
+                android:layout_height="wrap_content"
+                android:text="@string/test_pick"
+                android:layout_width="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_abs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/label_AC" />
+
+            <Spinner
+                android:id="@+id/AC_picker"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent" />
+
+         </TableRow>
+
+        <TableRow
+            android:id="@+id/row_Label1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/label_pushups" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/label_crunches" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_PU_CH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <Spinner
+                android:id="@+id/PU_picker"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent" />
+
+            <Spinner
+                android:id="@+id/CH_picker"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_Label2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/run_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:text="@string/label_runtime" />
+
+            <CheckBox
+                android:id="@+id/walk_check"
+                android:text="@string/use_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_run"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/input_run"
+                android:inputType="time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/chk_run_exempt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_exempt"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_hi_alt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:visibility="invisible">
+
+            <CheckBox
+                android:id="@+id/alt_check"
+                android:text="@string/hi_alt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/hi_alt_picker"
+                android:spinnerMode="dropdown"
+                android:entries="@array/alt_array"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/btn_score_test"
+                android:text="@string/calc_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_form"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

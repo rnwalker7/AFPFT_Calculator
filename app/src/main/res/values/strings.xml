@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Fit2Fight</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Label Text -->
+    <string name="label_exempt">Exempt</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_age">Age</string>
+    <string name="label_AC">Ab Circumference</string>
+    <string name="label_pushups">Pushups</string>
+    <string name="label_crunches">Crunches</string>
+    <string name="label_runtime">Run Time</string>
+    <string name="use_walk">Use Walk Test</string>
+    <string name="label_walktime">Walk Time</string>
+    <string name="hi_alt">High Altitude</string>
+    <string name="test_pick">Use These Values</string>
+    <string name="calc_score">Calculate Score</string>
+    <string name="reset_form">Reset Values</string>
+    <string name="label_title">Fit2Fight</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="age_array">
+        <item>Under 30</item>
+        <item>30&#8211;39</item>
+        <item>40&#8211;49</item>
+        <item>50&#8211;59</item>
+        <item>60+</item>
+    </string-array>
+
+    <string-array name="alt_array">
+        <item>5250&#8211;5499 ft</item>
+        <item>5500&#8211;5999 ft</item>
+        <item>6000&#8211;6599 ft</item>
+        <item>6600+ ft</item>
+    </string-array>
+
+    <!--<string name="title_activity_f2_fsplash">F2FSplash</string> -->
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
